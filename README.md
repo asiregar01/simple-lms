@@ -1,4 +1,4 @@
 # SimpleLybraryManagementSystem
 
-Code By. ALexander D. Siregar
+Code By. Alexander D. Siregar
 Redesign By. Alfando R. Rorong
