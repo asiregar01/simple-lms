@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TransPeminjaman</class>
+ <widget class="QDialog" name="TransPeminjaman">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Transaksi Peminjaman</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>borrow-book-icon.png</normaloff>borrow-book-icon.png</iconset>
+  </property>
+  <widget class="QTableWidget" name="tblPeminjaman">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>501</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Tabel peminjaman</string>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Kode Trans</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tanggal Pinjam</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kode Peminjam</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kode Buku</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tgl Hrs Kembali</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>501</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnCreate">
+      <property name="toolTip">
+       <string>Tambah transaksi peminjaman</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnCreate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnCreate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnUpdate">
+      <property name="toolTip">
+       <string>Update transaksi peminjaman</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnUpdate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnUpdate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnDelete">
+      <property name="toolTip">
+       <string>Hapus transaksi peminjaman</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnDelete:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnDelete:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClear">
+      <property name="toolTip">
+       <string>Clear input</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnClear:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnClear:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnRefresh">
+      <property name="toolTip">
+       <string>Refresh tabel peminjaman</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnRefresh:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnRefresh:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(16, 30, 41, 240);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>501</width>
+     <height>183</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>TRANSAKSI PEMINJAMAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kode Transaksi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="edtKodeTrans">
+        <property name="toolTip">
+         <string>Kode transaksi peminjaman</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Tanggal Transaksi*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="dteTglTrans">
+        <property name="toolTip">
+         <string>Masukkan tanggal peminjaman [bulan/tanggal/tahun]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kode Peminjam*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="edtKodePeminjam">
+          <property name="toolTip">
+           <string>Masukkan kode peminjam</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnCariPeminjam">
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edtNamaPeminjam">
+          <property name="toolTip">
+           <string>Nama peminjam</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kode Buku*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="edtKodeBuku">
+          <property name="toolTip">
+           <string>Masukkan kode buku</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnCariBuku">
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edtJudulBuku">
+          <property name="toolTip">
+           <string>Judul buku</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Tanggal Harus Kembali*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDateEdit" name="dteTglHrsKembali">
+        <property name="toolTip">
+         <string>Tanggal harus kembali [bulan/tanggal/tahun]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>tblPeminjaman</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>edtKodeTrans</tabstop>
+  <tabstop>dteTglTrans</tabstop>
+  <tabstop>edtKodePeminjam</tabstop>
+  <tabstop>btnCariPeminjam</tabstop>
+  <tabstop>edtNamaPeminjam</tabstop>
+  <tabstop>edtKodeBuku</tabstop>
+  <tabstop>btnCariBuku</tabstop>
+  <tabstop>edtJudulBuku</tabstop>
+  <tabstop>dteTglHrsKembali</tabstop>
+  <tabstop>btnCreate</tabstop>
+  <tabstop>btnUpdate</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnClear</tabstop>
+  <tabstop>btnRefresh</tabstop>
+  <tabstop>tblPeminjaman</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Konfigurasi</class>
+ <widget class="QDialog" name="Konfigurasi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>293</width>
+    <height>158</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Konfigurasi</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>config-icon.png</normaloff>config-icon.png</iconset>
+  </property>
+  <widget class="QPushButton" name="btnUpdate">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>111</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Update konfigurasi</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#btnUpdate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnUpdate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1</y>
+     <width>290</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(16, 30, 41, 240);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>21</y>
+     <width>271</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="edtMaksPinjam">
+      <property name="toolTip">
+       <string>Jumlah maksimal buku yang bisa dipinjam</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="inputMask">
+       <string>000</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>3</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="edtLamaPinjam">
+      <property name="toolTip">
+       <string>Lama peminjaman dalam hari</string>
+      </property>
+      <property name="inputMask">
+       <string>000</string>
+      </property>
+      <property name="maxLength">
+       <number>3</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>Maks Pinjam</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>Lama Pinjam</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>Buku</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>Hari</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>btnUpdate</zorder>
+  <zorder>gridLayoutWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>btnUpdate</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,2 +1,4 @@
-# simple-lms
-Very Simple Library Management System
+# SimpleLybraryManagementSystem
+
+Code By. ALexander D. Siregar
+Redesign By. Alfando R. Rorong

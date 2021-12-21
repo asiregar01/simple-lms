@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MasterPeminjam</class>
+ <widget class="QDialog" name="MasterPeminjam">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Master Peminjam</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>borrower-icon.png</normaloff>borrower-icon.png</iconset>
+  </property>
+  <widget class="QTableWidget" name="tblPeminjam">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>269</y>
+     <width>501</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Tabel master peminjam</string>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Kode</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>No Identitas</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama Depan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama Belakang</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Alamat</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>501</width>
+     <height>255</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>MASTER PEMINJAM</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kode Peminjam*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="edtKodePeminjam">
+        <property name="toolTip">
+         <string>Masukkan kode peminjam</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>No. Identitas*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="edtNoIdentitas">
+        <property name="toolTip">
+         <string>Masukkan nomor identitas</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Nama Belakang</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Alamat</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Nama Depan*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="edtNamaDepan">
+        <property name="toolTip">
+         <string>Masukkan nama depan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="edtNamaBelakang">
+        <property name="toolTip">
+         <string>Masukkan nama belakang</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QTextEdit" name="txtAlamat">
+        <property name="toolTip">
+         <string>Masukkan alamat</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnCreate">
+        <property name="toolTip">
+         <string>Tambah data peminjam</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnCreate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnCreate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Create</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnUpdate">
+        <property name="toolTip">
+         <string>Update data peminjam</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnUpdate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnUpdate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDelete">
+        <property name="toolTip">
+         <string>Hapus data peminjam</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnDelete:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnDelete:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClear">
+        <property name="toolTip">
+         <string>Clear input</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnClear:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnClear:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRefresh">
+        <property name="toolTip">
+         <string>Refresh tabel peminjam</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#btnRefresh:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnRefresh:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>Refresh</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(16, 30, 41, 240);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>tblPeminjam</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>btnCreate</tabstop>
+  <tabstop>btnUpdate</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnClear</tabstop>
+  <tabstop>btnRefresh</tabstop>
+  <tabstop>edtKodePeminjam</tabstop>
+  <tabstop>edtNoIdentitas</tabstop>
+  <tabstop>edtNamaDepan</tabstop>
+  <tabstop>edtNamaBelakang</tabstop>
+  <tabstop>txtAlamat</tabstop>
+  <tabstop>tblPeminjam</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MasterBuku</class>
+ <widget class="QDialog" name="MasterBuku">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Master Buku</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>book-icon.png</normaloff>book-icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>501</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnCreate">
+      <property name="toolTip">
+       <string>Tambah data buku</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnCreate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnCreate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnUpdate">
+      <property name="toolTip">
+       <string>Update data buku</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnUpdate:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnUpdate:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnDelete">
+      <property name="toolTip">
+       <string>Hapus data buku</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnDelete:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnDelete:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClear">
+      <property name="toolTip">
+       <string>Clear input</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnClear:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnClear:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnRefresh">
+      <property name="toolTip">
+       <string>Refresh tabel buku</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton#btnRefresh:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnRefresh:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tblBuku">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>501</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Kode</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Judul</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Pengarang</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kategori</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Jumlah</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignTrailing|AlignVCenter</set>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>501</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>MASTER BUKU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kode Buku*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="edtKodeBuku">
+        <property name="toolTip">
+         <string>Masukkan kode buku</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Judul Buku*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="edtJudulBuku">
+        <property name="toolTip">
+         <string>Masukkan judul buku</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Pengarang*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="edtPengarang">
+        <property name="toolTip">
+         <string>Masukkan nama pengarang</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Kategori*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="cboKategori">
+        <property name="toolTip">
+         <string>Masukkan kategori buku</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border: 0px solid;</string>
+        </property>
+        <property name="text">
+         <string>Jumlah Buku*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSpinBox" name="spnJumlahBuku">
+        <property name="toolTip">
+         <string>Masukkan jumlah buku</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>500</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>521</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(16, 30, 41, 240);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>tblBuku</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>btnCreate</tabstop>
+  <tabstop>btnUpdate</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnClear</tabstop>
+  <tabstop>btnRefresh</tabstop>
+  <tabstop>edtKodeBuku</tabstop>
+  <tabstop>edtJudulBuku</tabstop>
+  <tabstop>edtPengarang</tabstop>
+  <tabstop>cboKategori</tabstop>
+  <tabstop>spnJumlahBuku</tabstop>
+  <tabstop>tblBuku</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
