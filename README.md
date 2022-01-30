@@ -1,7 +1,10 @@
 # SimpleLybraryManagementSystem
 
-Code By. Alexander D. Siregar
-Redesign & Tested By. Alfando R. Rorong
-Kelompok 3 Tugas Akhir Mata Kuliah Pemrograman Berbasis Event
+Project Akhir Mata Kuliah Logika dan Teknik Pemrograman
+Semester I Institut Teknologi Tangerang Selatan
 
-Mission Pass... #Respect :D
+Kelompok I:
+1. Alexander Dalimarta Siregar (NIM: 1002210031)
+2. Alfando Riski Rorong (NIM: 1002210068)
+3. Faiz Azhari M (NIM: 1002210075)
+
