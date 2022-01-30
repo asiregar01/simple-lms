@@ -1386,7 +1386,7 @@ def about_help(self):
     dlg.setIcon(QMessageBox.Information)
     dlg.setText("Simple Library Management System\n"
                 "Tugas Akhir Mata Kuliah Logika dan Teknik Pemrograman\n"
-                "Kelompok 1:\nAlexander Dalimarta Siregar (NIM: 1002210031)\nAlfroot Riski Rorong (NIM: 1002210068)\n"
+                "Kelompok 1:\nAlexander Dalimarta Siregar (NIM: 1002210031)\nAlfando Riski Rorong (NIM: 1002210068)\n"
                 "Faiz Azhari M (NIM: 1002210075)")
     dlg.exec_()
 
