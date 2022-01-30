@@ -304,6 +304,7 @@ def login(self):
             LoginDialog.hide()
             uim.read_dashboard()
             main_window.show()
+            
     except mdb.Error as e:
         dlg = QMessageBox()
         dlg.setWindowTitle("Error")
@@ -1323,7 +1324,7 @@ def load_trans_pengembalian(self):
 def clear_trans_pengembalian(self):
     ui_tpk.dteTglTrans.setDate(QDate.currentDate())
     ui_tpk.dteTglKembali.setDate(QDate.currentDate())
-    ui_tpk.dteTglHrsKembali.setDate(QDate.currentDate()) #CheckAndo1
+    ui_tpk.dteTglHrsKembali.setDate(QDate.currentDate()) #Checkroot1
     ui_tpk.edtKodePeminjam.setText('')
     ui_tpk.edtNamaPeminjam.setText('')
     ui_tpk.edtKodeBuku.setText('')
@@ -1384,9 +1385,9 @@ def about_help(self):
     dlg.setWindowTitle("About Program")
     dlg.setIcon(QMessageBox.Information)
     dlg.setText("Simple Library Management System\n"
-                "Tugas Akhir Mata Kuliah Pemrograman Berbasis Event\n"
-                "Kelompok 3:\nAlexander Dalimarta Siregar (NIM: 1002210031)\nAlfando Riski Rorong (NIM: 1002210068)\n"
-                "Andi Hermansyah (NIM: 1002210028)\nMuhamad Hidayat (NIM: 1002210057)")
+                "Tugas Akhir Mata Kuliah Logika dan Teknik Pemrograman\n"
+                "Kelompok 1:\nAlexander Dalimarta Siregar (NIM: 1002210031)\nAlfroot Riski Rorong (NIM: 1002210068)\n"
+                "Faiz Azhari M (NIM: 1002210075)")
     dlg.exec_()
 
 def read_dashboard(self):

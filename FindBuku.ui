@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>275</width>
-    <height>245</height>
+    <width>297</width>
+    <height>250</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,22 @@
   <widget class="QPushButton" name="btnSelect">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>204</x>
      <y>210</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#btnSelect:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-position:calc(100% - 10px)center;
+}
+QPushButton#btnSelect:hover{
+background-color:rgba(2, 65, 118, 200);
+}</string>
    </property>
    <property name="text">
     <string>Select</string>
@@ -34,7 +45,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>256</width>
+     <width>271</width>
      <height>192</height>
     </rect>
    </property>
@@ -52,6 +63,26 @@
     </property>
    </column>
   </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>290</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(16, 30, 41, 240);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>btnSelect</zorder>
+  <zorder>tblData</zorder>
  </widget>
  <tabstops>
   <tabstop>tblData</tabstop>
